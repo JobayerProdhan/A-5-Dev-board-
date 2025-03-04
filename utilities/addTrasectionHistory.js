@@ -19,7 +19,7 @@ function addTrasectionHistory(historyDiv, buttonId){
 function addHistory(serviceName,historyDiv){
     const history = document.getElementById(historyDiv);
     const p = document.createElement('p');
-    p.className = 'bg-[#F4F7FF] p-3 rounded-md';
-    p.innerText = `Your service ${serviceName} has been added ${new Date().toLocaleString()}`;
+    p.className = 'bg-[#F4F7FF] p-3 rounded-md m-4';
+    p.innerText = `Your have completed ${serviceName} at ${new Date().toLocaleString()}`;
     history.appendChild(p);
 };

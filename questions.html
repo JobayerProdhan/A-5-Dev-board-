@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+    .poppins-normal {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    }
+    </style>
+</head>
+<body class="poppins-normal bg-[#F4F7FF] ">
+    <header class="p-4">
+        <nav class="flex items-center justify-between   p-8 bg-white rounded-lg w-[90%] mx-auto">
+            <div class="flex items-center gap-2">
+                <div>
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-[35px]">dev<span class="font-bold">Board</span></h1>
+                </div>
+            </div>
+            <a href="index.html">
+                <button  class="btn bg-blue-700 text-white rounded-sm">Back to Desk</button>
+            </a>
+            
+        </nav>
+
+    </header>
+    <main>
+        <section class="p-6 w-[90%] mx-auto">
+            <h1 class="text-center font-bold text-[30px]">Blog</h1>
+
+
+            <div class="bg-white rounded p-4 my-5">
+                    <p class="font-bold">Question-1: What are the different way to select an element in the DOM?</p>
+                    <div class="border-t-2 border-dotted border-gray-500 my-4">
+                </div>
+                <div>
+                    <h1 >Different ways to select an Element in the DOM</h1>
+                    <ol class="list-decimal pl-6">
+                        <li>getElementById(id)</li>
+                        <li>getElementsByClassName(className)</li>
+                        <li>getElementsByTagName(tagName)</li>
+                        <li>querySelector(selector)</li>
+                        <li>querySelectorAll(selector)</li>
+                        <li>closest(selector)</li>
+                    </ol>
+                </div>
+            </div>
+
+
+
+            <div class="bg-white rounded p-4 my-5">
+                <p class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+                <div class="border-t-2 border-dotted border-gray-500 my-4"></div>
+                <div>
+                    <h1 class="pb-3">Difference between innerHTML, innerText, and textContent</h1>
+                    <table class="min-w-full table-auto border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border px-4 py-2">Property</th>
+                                <th class="border px-4 py-2">Description</th>
+                                <th class="border px-4 py-2">Use Case</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border px-4 py-2">innerHTML</td>
+                                <td class="border px-4 py-2">Access inner HTML of an element</td>
+                                <td class="border px-4 py-2">Useful when we want to manipulate inner HTML of HTML element</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">innerText</td>
+                                <td class="border px-4 py-2">Access inner Text of an element</td>
+                                <td class="border px-4 py-2">Useful when you need the text content of an element (for example: to read user-visible content).</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">textContent</td>
+                                <td class="border px-4 py-2">Access text content  but not any HTML tags.</td>
+                                <td class="border px-4 py-2">Useful for getting text content without worrying about visible or hidden elements.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+            <div class="bg-white rounded p-4 my-5">
+                <p class="font-bold">Question-3: What is event delegation in the DOM</p>
+                <div class="border-t-2 border-dotted border-gray-500 my-4"></div>
+                <p>Event delegation : It's a tecnique to where a single event listener is attached to it's parent element. </p>
+            </div>
+
+
+            <div class="bg-white rounded p-4 my-5">
+                <p class="font-bold">Question-4: What is event bubbling in the DOM?</p>
+                <div class="border-t-2 border-dotted border-gray-500 my-4"></div>
+                <p>In a word event bubbling is a concept of JS. It is a event that occurs on a child element 'bubbles up to it's parent element.</p>
+            </div>
+
+
+
+            <div class="bg-white rounded p-4 my-5">
+                <p class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+                <div class="border-t-2 border-dotted border-gray-500 my-4"></div>
+                <ul>
+                    <li><strong>Create an Element:</strong> Use JavaScript to create an HTML element (like a div, paragraph, etc.).</li>
+                    <li><strong>Add an Element:</strong> Attach the created element to the existing document or any specific container in the DOM.</li>
+                    <li><strong>Remove an Element:</strong> Remove an element from the DOM by accessing its parent and calling the remove function.</li>
+                </ul>
+
+
+        </section>
+
+    </main>
+
+    
+</body>
+</html>
+

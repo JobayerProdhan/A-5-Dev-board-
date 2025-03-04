@@ -18,8 +18,8 @@
     </style>
 </head>
 <body class="poppins-normal bg-[#F4F7FF]">
-    <header>
-        <nav class="flex justify-between items-center px-8 py-6 mx-auto w-[1536px] bg-white rounded-2xl">
+    <header class="p-4">
+        <nav class="flex justify-between items-center px-8 py-6 mx-auto w-[90%] bg-white rounded-2xl shadow-md">
             <!-- Left side -->
              <div class="flex items-center gap-2">
                 <div>
@@ -33,19 +33,19 @@
              <div class="flex gap-3 items-center">
                 <div class="flex gap-3 bg-[#F4F7FF] p-3 rounded-2xl">
                     <div>
-                        <img src="assets/checkbox.png" alt="">
+                        <img  src="assets/checkbox.png" alt="">
                     </div>
                     <div>
                         <h1 id="list-task" class="font-bold text-3xl">23</h1>
                     </div>
                 </div>
                 <div>
-                    <img src="assets/theme-btn.png" alt="">
+                    <img id="theme" src="assets/theme-btn.png" alt="">
                 </div>
              </div>
         </nav>
     </header>
-    <main class="mx-auto w-[1536px] p-4">
+    <main class="mx-auto w-[90%] p-4">
         <!-- full section  -->
      <section class="flex gap-5">    
         <!-- left section   -->
@@ -54,29 +54,29 @@
             <div class="flex w-full">
                 <div class="flex flex-1 items-center gap-5 bg-[#F4F7FF] p-5 rounded-2xl my-5">
                     <div>
-                        <img src="assets/checkbox.png" alt="">
+                        <img class="bg-white p-3 rounded-full" src="assets/checkbox.png" alt="">
                     </div>
                     <div>
                         <p>Tast Assigned</p>
                         <h1 id="assigned-task" class="font-bold text-3xl">6</h1>
                     </div>
                 </div>
-                <div class="w-1/2 flex items-center gap-5 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-2xl p-5 mx-10 my-5 text-white">
+                <div id="discover" class="w-1/2 flex items-center gap-5 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-2xl p-5 mx-10 my-5 text-white">
                     <div>
                         <img src="assets/board.png" alt="">
                     </div>
                     <div>
-                        <p>Discomver Something</p>
-                        <p>New today</p>
+                        <p class="font-medium text-[24px]">Discover Something New today</p>
+                        
                     </div>
                 </div>
                 <div class="flex flex-1 gap-4 items-center bg-[#F4F7FF] p-5 rounded-2xl my-5">
                     <div>
-                        <img src="assets/calender.png" alt="">
+                        <img class="bg-white p-3 rounded-full" src="assets/calender.png" alt="">
                     </div>
                     <div>
                         <h1>Date</h1>
-                        <h1>Time</h1>
+                        <h1 id="time"></h1>
                     </div>
 
                 </div>
@@ -90,7 +90,7 @@
 
 
 
-                <div class="bg-[#F4F7FF] p-5 rounded-2xl">
+                <div class="bg-[#F4F7FF] p-5 rounded-2xl shadow-md">
                     <p class="bg-white w-26 rounded-2xl p-3">ShopEase</p>
                     <h1 class="font-medium text-[24px] pt-4">Fix Mobile Button issue</h1>
                     <div class="bg-white p-5 rounded-2xl my-5">
@@ -109,7 +109,7 @@
 
 
 
-                <div class="bg-[#F4F7FF] p-5 rounded-2xl">
+                <div class="bg-[#F4F7FF] p-5 rounded-2xl shadow-md">
                     <p class="bg-white w-26 rounded-2xl p-3">CloudSync</p>
                     <h1 class="font-medium text-[24px] pt-4">Add Dark Mode</h1>
                     <div class="bg-white p-5 rounded-2xl my-5">
@@ -127,7 +127,7 @@
 
 
 
-                <div class="bg-[#F4F7FF] p-5 rounded-2xl">
+                <div class="bg-[#F4F7FF] p-5 rounded-2xl shadow-md">
                     <p class="bg-white w-26 rounded-2xl p-3">SwiftPay</p>
                     <h1 class="font-medium text-[24px] pt-4">Optimize  Home page    </h1>
                     <div class="bg-white p-5 rounded-2xl my-5">
@@ -145,7 +145,7 @@
                  
 
 
-                <div class="bg-[#F4F7FF] p-5 rounded-sm">
+                <div class="bg-[#F4F7FF] p-5 rounded-2xl shadow-md">
                     <p class="bg-white w-26 rounded-2xl p-3">Meta</p>
                     <h1 class="font-medium text-[24px] pt-4">Add new emoji 🤲</h1>
                     <div class=" bg-white p-5 rounded-2xl my-5">
@@ -168,7 +168,7 @@
 
 
 
-                <div class="bg-[#F4F7FF] p-5 rounded-2xl">
+                <div class="bg-[#F4F7FF] p-5 rounded-2xl shadow-md">
                     <p class="bg-white w-30 rounded-2xl p-3">Google LLC</p>
                     <h1 class="font-medium text-[24px] pt-4">Integrate OpenAI API</h1>
                     <div class="bg-white p-5 rounded-2xl my-5">
@@ -187,7 +187,7 @@
 
 
 
-                <div class="bg-[#F4F7FF] p-5 rounded-2xl">
+                <div class="bg-[#F4F7FF] p-5 rounded-2xl shadow-md">
                     <p class="bg-white w-26 rounded-2xl p-3">Glassdoar</p>
                     <h1 class="font-medium text-[24px] pt-4">Improve Job searching</h1>
                     <div class="bg-white p-5 rounded-2xl my-5">
@@ -208,12 +208,17 @@
  
         </div>
         <!-- right section  -->
-        <divn class="w-2/4 mx-4 items-center align-middle">
+        <div class="w-2/4 mx-4 items-center align-middle max-h-full bg-white p-4 rounded-2xl">
             <div class=" justify-between items-center gap-4">
-                <img class="px-24 py-4" src="assets/activity.png" alt="">
-                <button class="btn bg-blue-700 text-white px-10 py-6 rounded-2xl w-full ">Clear History</button>
+                <div class="flex justify-center gap-5 py-5">
+                    
+                    <img class="" src="assets/activity.png" alt="">
+                    <h1>Activity Log </h1>
+                </div>
+                
+                <button id="clear" class="btn bg-blue-700 text-white px-10 py-6 rounded-2xl w-full ">Clear History</button>
             </div>
-            <div id="history" class="bg-white p-5 rounded-2xl my-4">
+            <div id="history" class="bg-white p-5 rounded-2xl my-4 ">
 
             </div>
         </div>
@@ -224,5 +229,10 @@
     <script src="scripts/clickOnButton.js"></script>
     <script src="utilities/subtractTask.js"></script>
     <script src="utilities/addTrasectionHistory.js"></script>
+    <script src="scripts/clearHistory.js"></script>
+    <script src="scripts/discoverToAnotherPage.js"></script>
+    <script src="scripts/time.js"></script>
+     <script src="scripts/themeChange.js"></script>
+     <script src="utilities/disableButton.js"></script>
 </body>
 </html>
